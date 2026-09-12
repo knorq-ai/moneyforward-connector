@@ -1,5 +1,5 @@
 {
-  "name": "@knorq-ai/moneyforward-connector",
+  "name": "@knorq/moneyforward-connector",
   "version": "0.2.0",
   "description": "MCP server for MoneyForward Cloud Invoice, Expense and Accounting APIs",
   "type": "module",

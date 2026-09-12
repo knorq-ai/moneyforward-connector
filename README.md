@@ -51,7 +51,7 @@ if [ -n "$MF_INVOICE_CLIENT_ID" ] && [ -n "$MF_INVOICE_CLIENT_SECRET" ]; then
     --env MF_INVOICE_CLIENT_ID="$MF_INVOICE_CLIENT_ID" \
     --env MF_INVOICE_CLIENT_SECRET="$MF_INVOICE_CLIENT_SECRET" \
     --env MF_REDIRECT_URI=http://127.0.0.1:38080/callback \
-    -- npx -y @knorq-ai/moneyforward-connector
+    -- npx -y @knorq/moneyforward-connector
 else
   echo 'No credentials entered — nothing was registered.'
 fi
@@ -120,7 +120,7 @@ fi
 if [ "$#" -gt 0 ]; then
   claude mcp add moneyforward "$@" \
     --env MF_REDIRECT_URI=http://127.0.0.1:38080/callback \
-    -- npx -y @knorq-ai/moneyforward-connector
+    -- npx -y @knorq/moneyforward-connector
 else
   echo 'No complete ID + secret pair was entered — nothing was registered.'
 fi
@@ -168,7 +168,7 @@ Or, for clients configured by file (Claude Desktop: `~/Library/Application Suppo
   "mcpServers": {
     "moneyforward": {
       "command": "npx",
-      "args": ["-y", "@knorq-ai/moneyforward-connector"],
+      "args": ["-y", "@knorq/moneyforward-connector"],
       "env": {
         "MF_INVOICE_CLIENT_ID": "xxxxxxxx",
         "MF_INVOICE_CLIENT_SECRET": "xxxxxxxx",

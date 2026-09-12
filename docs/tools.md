@@ -2,7 +2,7 @@
 
 [English](../README.md) | [日本語](../README.ja.md)
 
-All 56 tools exposed by `@knorq-ai/moneyforward-connector`, grouped by MoneyForward product. Tool descriptions are in Japanese because that is what the MCP client sees.
+All 56 tools exposed by `@knorq/moneyforward-connector`, grouped by MoneyForward product. Tool descriptions are in Japanese because that is what the MCP client sees.
 
 `R/W` marks whether a tool only reads (`R`) or changes data (`W`). ⚠️ marks irreversible or partially-destructive operations — always review these before allowing them.
 
